@@ -1,0 +1,80 @@
+/* Layout */
+body {
+    font-family: 'Arial', sans-serif; /* Mengganti font untuk tampilan lebih modern */
+    margin: 0; /* Menghapus margin default */
+    background: #f4f4f4; /* Menambahkan warna latar belakang halaman */
+}
+
+header {
+    background: #48a5f5; /* Warna biru lebih terang untuk header */
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus untuk header */
+}
+
+.container {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    margin: 20px; /* Margin di sekitar container */
+}
+
+aside {
+    flex: 20%; /* Lebar sidebar 20% */
+    background: #84a7cb; /* Warna lebih gelap untuk sidebar */
+    margin-right: 20px; /* Margin di sebelah kanan sidebar */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+section.main {
+    flex: 80%; /* Lebar konten utama 80% */
+    background: #fff; /* Warna putih untuk konten utama */
+    min-height: 530px; /* Tinggi minimum konten utama */
+    padding: 20px; /* Padding di dalam konten utama */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+footer {
+    background: #BDC3C7; /* Warna abu-abu lebih lembut untuk footer */
+    color: #2C3E50; /* Teks lebih gelap untuk footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Jarak di atas footer */
+    border-top: 1px solid #2C3E50; /* Garis pemisah footer */
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; /* Mengubah arah layout menjadi kolom pada layar kecil */
+    }
+}
+
+/* Navigasi */
+.menu {
+    padding: 0; /* Menghapus padding dari <ul> */
+}
+
+.menu li {
+    border-bottom: 1px dotted #444; /* Garis batas di bawah setiap item menu */
+}
+
+.menu a {
+    display: block;
+    padding: 20px; /* Padding di sekitar item menu */
+    list-style: none; /* Menghapus bullet list */
+    color: #ecf0f1; /* Warna lebih lembut untuk item menu */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    transition: background 0.3s ease; /* Transisi halus untuk hover */
+}
+
+.menu a:hover {
+    background: #48a5f5; /* Warna biru lebih cerah saat hover */
+}
+
+/* Mengatur footer dengan background abu-abu dan teks di tengah */
+footer {
+    margin-top: 20px; /* Jarak di atas footer */
+}

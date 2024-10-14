@@ -1,0 +1,169 @@
+/* Mengatur gaya dasar body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Gaya untuk header dengan efek gradien */
+header {
+    background: linear-gradient(45deg, #6bcdf7, #48a5f5);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Gaya untuk setiap section */
+section {
+    padding: 60px 0;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+/* Gaya container agar lebih responsif */
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Gaya untuk menu-item agar lebih menarik */
+.menu-item {
+    display: inline-block;
+    width: 30%;
+    margin: 15px;
+    vertical-align: top;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.1);
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.menu-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Gaya untuk jam operasional */
+#hours {
+    padding: 20px;
+    background: #f0f0f5;
+    padding: 50px 0;
+    background: #9bb8d0;
+    color: white;
+}
+
+#hours p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Gaya untuk lokasi */
+#location {
+    padding: 20px;
+    background: #9bb8d0;
+    background-color:#9bb8d0;
+    color: white;
+    padding: 50px 0;
+}
+
+#location h2, #location p {
+    color: white;
+}
+
+/* Gaya untuk tombol back-to-top */
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #87a6d8;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+#back-to-top:hover {
+    background: #87a6d8;
+}
+
+/* Gaya untuk footer */
+footer {
+    background-color: #48a5f5;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive design untuk tampilan mobile */
+@media (max-width: 768px) {
+    .menu-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header nav ul {
+        text-align: center;
+    }
+}

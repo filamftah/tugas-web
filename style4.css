@@ -1,0 +1,148 @@
+/* Layout */
+body {
+    font-family: 'Arial', sans-serif; /* Mengganti font untuk tampilan lebih modern */
+    margin: 0; /* Menghapus margin default */
+    background: #f4f4f4; /* Menambahkan warna latar belakang halaman */
+}
+
+header {
+    background: #48a5f5; /* Warna biru lebih terang untuk header */
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan halus untuk header */
+    text-align: center; /* Rata tengah untuk header */
+}
+
+.container {
+    display: flex; /* Menggunakan flexbox untuk layout */
+    margin: 20px; /* Margin di sekitar container */
+}
+
+/* Sidebar */
+aside {
+    flex: 20%; /* Lebar sidebar 20% */
+    background: #84a7cb; /* Warna lebih gelap untuk sidebar */
+    margin-right: 20px; /* Margin di sebelah kanan sidebar */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+/* Konten Utama */
+section.main {
+    flex: 80%; /* Lebar konten utama 80% */
+    background: #fff; /* Warna putih untuk konten utama */
+    min-height: 530px; /* Tinggi minimum konten utama */
+    padding: 20px; /* Padding di dalam konten utama */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan halus */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+/* Footer */
+footer {
+    background: #BDC3C7; /* Warna abu-abu lebih lembut untuk footer */
+    color: #2C3E50; /* Teks lebih gelap untuk footer */
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px; /* Jarak di atas footer */
+    border-top: 1px solid #2C3E50; /* Garis pemisah footer */
+}
+
+/* Responsive Layout */
+@media (max-width: 700px) {
+    .container {
+        flex-direction: column; /* Mengubah arah layout menjadi kolom pada layar kecil */
+    }
+}
+
+/* Navigasi */
+.menu {
+    padding: 0; /* Menghapus padding dari <ul> */
+}
+
+.menu li {
+    border-bottom: 1px dotted #444; /* Garis batas di bawah setiap item menu */
+}
+
+.menu a {
+    display: block;
+    padding: 20px; /* Padding di sekitar item menu */
+    list-style: none; /* Menghapus bullet list */
+    color: #ecf0f1; /* Warna lebih lembut untuk item menu */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    transition: background 0.3s ease; /* Transisi halus untuk hover */
+}
+
+.menu a:hover {
+    background: #48a5f5; /* Warna biru lebih cerah saat hover */
+}
+
+/* Halaman Form */
+/* Mengatur form-group agar tidak terpengaruh float */
+.form-group {
+    margin-bottom: 20px; /* Menambahkan jarak antar form-group */
+    background: #ffffff; /* Latar belakang putih untuk form-group */
+    padding: 15px; /* Padding untuk memberi ruang dalam form-group */
+    border-radius: 8px; /* Sudut membulat */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan halus untuk form-group */
+    display: flex; /* Menggunakan flexbox untuk tata letak form */
+    align-items: center; /* Penyelarasan vertikal */
+}
+
+/* Mengatur lebar label 30% dengan teks bold */
+.form-group label {
+    flex: 0 0 30%; /* Lebar label */
+    font-weight: bold; /* Teks bold untuk label */
+    color: #34495e; /* Mengubah warna teks label */
+}
+
+/* Mengatur lebar .input 65% agar sejajar dengan label */
+.form-group .input {
+    flex: 1; /* Mengisi sisa ruang */
+}
+
+/* Mengatur input radio */
+input[type=radio] {
+    margin-right: 10px; /* Menambahkan jarak antara radio button dan label */
+}
+
+/* Mengatur tampilan tombol */
+.tombol {
+    padding: 10px 15px; /* Padding tombol */
+    color: #fff; /* Warna teks putih */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Sudut membulat */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s ease; /* Transisi halus untuk hover */
+}
+
+/* Warna tombol */
+.tombol.simpan {
+    background: #038ade; /* Warna tombol simpan */
+}
+
+.tombol.reset {
+    background: #fb8307; /* Warna tombol reset */
+}
+
+/* Efek hover pada tombol */
+.tombol.simpan:hover {
+    background: #0273b8; /* Warna lebih gelap saat hover */
+}
+
+.tombol.reset:hover {
+    background: #e08b00; /* Warna lebih gelap saat hover */
+}
+
+/* Memebuat tampilan form menumpuk pada layar kecil */
+@media (max-width: 700px) {
+    .form-group {
+        flex-direction: column; /* Mengubah tata letak grup menjadi kolom */
+    }
+    .form-group label,
+    .form-group .input {
+        width: 100%; /* Mengubah lebar menjadi 100% untuk tampilan mobile */
+        float: none; /* Menghapus float agar elemen tidak berdampingan */
+    }
+}
